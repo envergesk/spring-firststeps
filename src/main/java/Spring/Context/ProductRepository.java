@@ -14,9 +14,11 @@ public class ProductRepository {
     @PostConstruct
     public void init(){
         products = new ArrayList<>(Arrays.asList(
-                new Product(1L, "Bread"),
-                new Product(2L, "Milk"),
-                new Product(3L, "Apples")
+                new Product(1L, "Bread", 50),
+                new Product(2L, "Milk", 100),
+                new Product(3L, "Apples",120),
+                new Product(4L,"Bananas",90),
+                new Product(5L,"Chocolate", 100)
         ));
     }
 
